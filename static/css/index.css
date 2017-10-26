@@ -2,3 +2,11 @@
     padding: 0;
     margin: 0;
 }
+.container{
+    width: 80px;
+    margin: auto 0;
+}
+.info{
+    background: pink;
+
+}
