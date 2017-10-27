@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.login{
+    background: url("../images/background.jpg") no-repeat;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+.login >.login_control{
+    width: 350px;
+    margin: 0 auto;
+
+}
+.login .title{
+    color: white;
+    text-align: center;
+    line-height: 1.2;
+    padding-top: 117px;
+    padding-bottom: 38px;
+}
+.title h2{
+    font-size: 30px;
+    font-weight: none;
+    padding-bottom: 11px ;
+}
+.title span{
+    font-size: 17px;
+}
+#username,#password ,.submit{
+    width: 350px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 20px ;
+}
+#username{
+    background: #fff url("../images/user-icon.png") 20px 12px no-repeat;
+}
+#password{
+    background: #fff url("../images/lock-icon.png") 20px 12px no-repeat;
+
+}
+/* #check{
+    height: 23px;
+    width: 23px;
+    -webkit-appearance:checkbox;
+    border:red solid 1px ;
+    color:red;
+    border-radius: 3px;
+} */
+
+
+input[type="checkbox"]{
+    display: none;
+
+}
+input[type="checkbox"] +label{
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border: 2px solid red;
+    border-radius: 3px ;
+    background: #1d2834;
+}
+input[type="checkbox"]:checked +label{
+    background: url("../images/check-icon.png") 4px 4px no-repeat;
+}
+
+.Remember_me{
+    margin-bottom: 20px;
+}
+
+.Remember_me span{
+    font-size: 15px;
+    font-family: "SourceSansPro";
+    color: rgb(189, 195, 199);
+    line-height: 1.2;
+    text-align: left;
+    margin-left: 28px; 
+
+  }
+
+.submit{
+    background: #95a5a6 url("../images/chevron-thin-right.png") 225px 15px no-repeat;
+}
+.submit:hover{
+    background-color: red;
+}
+.submit > span {
+    font-size: 20px;
+    font-family: "Bitter";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    -moz-transform: matrix( 0.8,0,0,0.8,0,0);
+    -webkit-transform: matrix( 0.8,0,0,0.8,0,0);
+    -ms-transform: matrix( 0.8,0,0,0.8,0,0);
+    /* position: absolute;
+    left: 369.271px;
+    top: 411px;
+    z-index: 37; */
+  }
+  .left {
+    font-size: 15px;
+    font-family: "Myriad Pro";
+    color: rgb(231, 76, 60);
+    line-height: 1.2;
+    text-align: left;
+    float: left;
+    /* position: absolute;
+    left: 222.937px;
+    top: 466.883px;
+    z-index: 49; */
+  }
+  .right {
+    font-size: 15px;
+    font-family: "Myriad Pro";
+    color: rgb(231, 76, 60);
+    line-height: 1.2;
+    float: right;
+    text-align: right;
+    /* position: absolute;
+    left: 477.937px;
+    top: 466.5px;
+    z-index: 50; */
+  }
+  
