@@ -35,12 +35,29 @@
     border: none;
     margin-bottom: 20px ;
 }
-#username{
+label[for="username"]{
+    display: inline;
+    float: left;
+    height: 50px;
+    width: 50px;
+    border-radius: 3px ;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     background: #fff url("../images/user-icon.png") 20px 12px no-repeat;
 }
 #password{
     background: #fff url("../images/lock-icon.png") 20px 12px no-repeat;
 
+}
+#username{
+    display: inline;
+    float: left;
+    width: 300px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#username:focus{
+    border: none;
 }
 /* #check{
     height: 23px;
