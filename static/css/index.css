@@ -2,11 +2,32 @@
     padding: 0;
     margin: 0;
 }
-.container{
-    width: 80px;
-    margin: auto 0;
+nav{
+    height: 50px;
+    background-color: pink;
+    border-bottom: 2px solid green;
 }
-.info{
-    background: pink;
-
+.contianer{
+    width: 80%;
+    margin: 0 auto;
+}
+ul li{
+    display: inline;
+    margin-left: -5px;
+    list-style: none;
+}
+ul li a{
+    color: inherit;
+    background: green;
+    text-decoration: none;  
+    height: inherit;
+    width: 100px;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    
+}
+ul li a:hover{
+    background: orange;
+    color:#3f3f3f;
 }
