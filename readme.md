@@ -18,6 +18,5 @@
 * javascript
 
 
-test git
 
 
