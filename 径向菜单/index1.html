@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cn-hans">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1>径向动画菜单演示</h1>
+	<div class="nav-wrap">
+		<nav>
+			<a class="nav-item1">1</a>
+			<a class="nav-item2">2</a>
+			<a class="nav-item3">3</a>
+			<a class="nav-item4">4</a>
+			<a class="nav-item5">5</a>
+			<a href="">61</a>
+			<a href="">62</a>
+			<a href="">63</a>
+			<a href="">64</a>
+		</nav>
+		<a class="main-nav">点我</a>
+	</div>
+	<script src="http://s0.qhimg.com/lib/jquery/183.js"></script>
+	<script src="js/index.js"></script>
+	<script type="text/javascript">
+		// (function(){
+		// 	$('.nav-wrap').on('click','.main-nav',function(e){
+		// 		e.preventDefault();
+		// 		var me=$(this),
+		// 			navWarp=me.closest('.nav-wrap'),
+		// 			navs=navWarp.find('nav a');
+		// 		var isLocated=false
+		// 		if(!navWarp.hasClass('active')&&!isLocated){
+		// 			var width = navWarp.width(),
+		// 				radius=width / 2,
+		// 				startAngle=0,
+		// 				endAngle=360,
+		// 				total=navs.length,
+		// 				gap=(endAngle - startAngle)/total;
+		// 				$.each(navs,function(index,item){
+		// 					var myAngle=(startAngle + gap*index)*(Math.PI/180);
+		// 					var myX=(1+Math.cos(myAngle))*radius,
+		// 						myY=(1+Math.sin(myAngle))*radius;
+		// 						$(this).css({
+		// 							left:myX+"px",
+		// 							top:myY+'px'
+		// 						})
+		// 				})
+		// 				isLocated=true;
+		// 		}
+
+		// 		navWarp.toggleClass('active');
+		// 	})
+		// })()
+	    
+	</script>
+</body>
+</html>

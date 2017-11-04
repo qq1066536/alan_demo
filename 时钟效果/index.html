@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul,li {
+            list-style: none;
+        }
+        .clock{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background: #292a38;
+            margin: 50px,auto;
+        }
+        .pointer li.circle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: left center;
+            background: #fff;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            margin-top: -5px;
+            margin-left: -5px;
+        }
+        .line-hour li, .line-min li{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: left center;
+            background: #fff;
+        }
+        .line-hour li{
+            width: 10px;
+            height: 2px;
+        }
+        .line-min li{
+            width: 5px;
+            height: 2px;
+        }
+        .numbers{
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            font-family: "Mircosoft Yahei";
+            font-size: 15px;
+            color: #fff;
+        }
+        .numbers li{
+            position: absolute;
+            transform: translate(-50%,-50%)
+        }
+        .pointer li{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: left center;
+            background: #fff;
+        }
+        .pointer li.hour{
+            width: 45px;
+            height: 3px;
+            margin-top: -1px;
+        }
+        .pointer li.min{
+            width: 60px;
+            height: 2px;
+            margin-top: -1px;
+        }
+        .pointer li.sec{
+            width: 80px;
+            height: 1px;
+            margin-top: -1px;
+        }
+    </style>
+</head>
+<body>
+    <h3>时钟效果</h3>
+    <div class="clock">
+        <ul class="line-min"></ul>
+        <ul class="line-hour">
+        </ul>
+        <ul class="numbers"></ul>
+        <ul class="pointer">
+            <li class="hour"></li>
+            <li class="min"></li>
+            <li class="sec"></li>
+            <li class="circle"></li>
+        </ul>
+    </div>
+    <script src="index.js"></script>
+    </script>
+</body>
+</html>
