@@ -8,7 +8,7 @@
 function hasClass(className,element){
 	'use strict';
 	var classNames=element.classList;
-	for(var i of classNames){
+	for(var i in classNames){
 		if(i ===className){
 			return true;
 		}
