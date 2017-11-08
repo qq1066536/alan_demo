@@ -8,7 +8,7 @@
 function hasClass(className,element){
 	'use strict';
 	var classNames=element.classList;
-	for(var i in classNames){
+	for(var i of classNames){
 		if(i ===className){
 			return true;
 		}
@@ -49,7 +49,7 @@ function IsShowMenu(className){
 		addClass(htmlContext.parentNode,className);
 		var isLocated=false;
 		if(!isLocated){
-			var width = window.getComputedStyle(htmlContext.parentNode).width.replace('px',''),
+			var width = parseInt(window.getComputedStyle(htmlContext.parentNode).width),
 				radius=width / 2,
 				startAngle=0,
 				endAngle=360,
