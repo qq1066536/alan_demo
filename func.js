@@ -15,3 +15,14 @@ function getStyle(obj, name)
 		return getComputedStyle(obj, false)[name];
 	}
 }
+
+function getByClass(objParent,strClass){
+	var arrEle=objParent.getElementsByTagName('*');
+	var arrResult=[];
+	for(var i=0 ; i<arrEle.length;i++){
+		if(arrEle[i].className==strClass){
+			arrResult.push(arrEle[i]);
+		}
+	}
+	return arrResult;
+}
