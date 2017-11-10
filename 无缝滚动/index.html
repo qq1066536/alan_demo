@@ -14,9 +14,9 @@
                 width: 800px;
                 height: 125px;
                 position: relative;
-                /* background: red; */
+                background: red;
                 left:200px;
-                top: 200px;
+                top: 20px;
                 overflow: hidden;
         }
         ul{
@@ -30,11 +30,12 @@
             list-style: none;
             /* display: inline; */
             /* margin-right: 10px; */
-            padding: 0 5px;
+            /* padding: 0 5px; */
             float: left;
         }
     </style>
     <script>
+
         window.onload=function(){
             var oDiv=document.getElementById('div1');
             var oUl=oDiv.getElementsByTagName('ul')[0];
@@ -59,7 +60,10 @@
             oDiv.onmouseout=function(){
                 timer=setInterval(move,30)
             }
+
+
         }
+
     </script>
 </head>
 <body>
