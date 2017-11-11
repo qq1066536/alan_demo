@@ -31,6 +31,7 @@ function getByClass(objParent,strClass){
 
 
 /**
+ * 图片轮播
  * 因为move是在不同的函数中调用的会导致this指向问题，用_this代替this
  * @param {父元素} doms 
  * @param {主体} body 
