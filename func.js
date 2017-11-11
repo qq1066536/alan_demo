@@ -58,7 +58,7 @@ var Marquee=function(doms,body,child,speed){
 	timer=setInterval(move,30);
 	var pauseMove=function(){
 		clearInterval(timer);
-	}
+	};
 	var cMove=function(){
 		timer=setInterval(move,30);
 	};
