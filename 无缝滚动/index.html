@@ -21,47 +21,61 @@
         }
         ul{
             position: absolute;
-            /* width: 1600px; */
         }
         img{
             width: 200px;
         }
         li{
             list-style: none;
-            /* display: inline; */
-            /* margin-right: 10px; */
-            /* padding: 0 5px; */
             float: left;
         }
-    </style>
-    <script>
+        #btn1,#btn2{
+            position: absolute;
+            /* display: block; */
+            /* float: left; */
+            height: 200px;
+            width: 200px;
+            top:20px;
+        }
+        #btn1{
+            left: 198px;
+            width:0; 
+            height:0; 
+            border-top:calc(125px/2) solid transparent;
+            border-bottom:calc(125px/2) solid transparent;
+            border-right:calc(125px/2) solid rgb(145, 28, 28);
+            transform: translate(-100%,0)
+        }
+        #btn2{
+            left: 1002px;
+            width:0; 
+            height:0; 
+            border-top:calc(125px/2) solid transparent;
+            border-bottom:calc(125px/2) solid transparent;
+            border-left:calc(125px/2) solid rgb(145, 28, 28);
 
+        }
+
+    </style>
+    <script src="../func.js"></script>
+    <script>
         window.onload=function(){
             var oDiv=document.getElementById('div1');
-            var oUl=oDiv.getElementsByTagName('ul')[0];
-            var aLi=oUl.getElementsByTagName('li');
-            var timer=null;
-            var speed=5;
-            oUl.innerHTML+=oUl.innerHTML
-            oUl.style.width=aLi[0].offsetWidth*aLi.length+'px';
-            function move(){
-                if(oUl.offsetLeft<-oUl.offsetWidth/2){
-                    oUl.style.left='0';
-                }
-                if(oUl.offsetLeft>0){
-                    oUl.style.left=-oUl.offsetWidth/2+'px';
-                }
-                oUl.style.left=oUl.offsetLeft+speed+'px';
-            }
-            timer=setInterval(move,30)
+            var oBtn1=document.getElementById("btn1");
+            var oBtn2=document.getElementById("btn2");
+            var marq=new Marquee(oDiv,'ul','li',2);
             oDiv.onmouseover=function(){
-                clearInterval(timer)
+                marq.pauseMove();
             }
             oDiv.onmouseout=function(){
-                timer=setInterval(move,30)
+                marq.cMove();
             }
-
-
+            oBtn1.onclick=function(){
+                marq.speed=-2
+            }
+            oBtn2.onclick=function(){
+                marq.speed=2
+            }
         }
 
     </script>
@@ -74,6 +88,9 @@
         <li><img src="./image/Balloon_by_Matt_Benson.jpg" alt=""></li>
         <li><img src="./image/Beach_by_Samuel_Scrimshaw.jpg" alt=""></li>
     </ul>
+
     </div>
+    <div id="btn1" title="向左移动"></div>
+    <div id="btn2"title="向右移动"></div>
 </body>
 </html>

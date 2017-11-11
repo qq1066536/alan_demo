@@ -31,38 +31,34 @@ function getByClass(objParent,strClass){
 
 
 /**
- * 不能实现暂停/继续效果
+ * 因为move是在不同的函数中调用的会导致this指向问题，用_this代替this
  * @param {父元素} doms 
  * @param {主体} body 
  * @param {子元素} child 
  * @param {移动速度} speed 
  */
-var Marquee=function(doms,body,child,speed){
-	var mar_parent=doms;
-	var mar_body=mar_parent.getElementsByTagName(body)[0];
-	var mar_childs=mar_body.getElementsByTagName(child);
-	var timer=null;
+function Marquee(doms,body,child,speed){
+	var _this=this;
+	this.mar_parent=doms;
+	this.mar_body=this.mar_parent.getElementsByTagName(body)[0];
+	this.mar_childs=this.mar_body.getElementsByTagName(child);
 	this.speed=speed;
-	mar_body.innerHTML+=mar_body.innerHTML;
-	mar_body.style.width=mar_childs[0].offsetWidth*mar_childs.length+'px';
-
-	var move=function(){
-		if(mar_body.offsetLeft<-mar_body.offsetWidth/2){
-			mar_body.style.left='0';
+	this.mar_body.innerHTML+=this.mar_body.innerHTML;
+	this.mar_body.style.width=this.mar_childs[0].offsetWidth*this.mar_childs.length+'px';
+	this.move=function(){
+		if(_this.mar_body.offsetLeft<-_this.mar_body.offsetWidth/2){
+			_this.mar_body.style.left='0';
 		}
-		if(mar_body.offsetLeft>0){
-			mar_body.style.left=-mar_body.offsetWidth/2+'px';
+		if(_this.mar_body.offsetLeft>0){
+			_this.mar_body.style.left=-_this.mar_body.offsetWidth/2+'px';
 		}
-		mar_body.style.left=mar_body.offsetLeft+speed+'px';
+		_this.mar_body.style.left=_this.mar_body.offsetLeft+_this.speed+'px';
 	};
-	timer=setInterval(move,30);
-	var pauseMove=function(){
-		clearInterval(timer);
-	};
-	var cMove=function(){
-		timer=setInterval(move,30);
-	};
-	this.pauseMove=pauseMove;
-	this.cMove=cMove;
-
+	this.timer=setInterval(this.move,30);
+}
+Marquee.prototype.cMove=function(){
+	this.timer=setInterval(this.move,30);
+};
+Marquee.prototype.pauseMove=function(){
+	clearInterval(this.timer);
 };
