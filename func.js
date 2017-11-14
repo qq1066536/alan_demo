@@ -1,1 +1,65 @@
-function getStyle(b,a){if(b.currentStyle){return b.currentStyle[a]}else{return getComputedStyle(b,false)[a]}}function getByClass(c,e){var d=c.getElementsByTagName("*");var a=[];for(var b=0;b<d.length;b++){if(d[b].className==e){a.push(d[b])}}return a}function Marquee(c,a,e,b){var d=this;this.mar_parent=c;this.mar_body=this.mar_parent.getElementsByTagName(a)[0];this.mar_childs=this.mar_body.getElementsByTagName(e);this.speed=b;this.mar_body.innerHTML+=this.mar_body.innerHTML;this.mar_body.style.width=this.mar_childs[0].offsetWidth*this.mar_childs.length+"px";this.move=function(){if(d.mar_body.offsetLeft<-d.mar_body.offsetWidth/2){d.mar_body.style.left="0"}if(d.mar_body.offsetLeft>0){d.mar_body.style.left=-d.mar_body.offsetWidth/2+"px"}d.mar_body.style.left=d.mar_body.offsetLeft+d.speed+"px"};this.timer=setInterval(this.move,30)}Marquee.prototype.cMove=function(){this.timer=setInterval(this.move,30)};Marquee.prototype.pauseMove=function(){clearInterval(this.timer)};
+/**
+ * 对currentstyle和getcomputedstyle 进行兼容处理，能在所有浏览器下运行
+ * @param {对象} obj 
+ * @param {属性} name 
+ */
+function getStyle(obj, name)
+{
+    'use strict';
+	if(obj.currentStyle)
+	{
+		return obj.currentStyle[name];
+	}
+	else
+	{
+		return getComputedStyle(obj, false)[name];
+	}
+}
+
+function getByClass(objParent,strClass){
+	var arrEle=objParent.getElementsByTagName('*');
+	var arrResult=[];
+	for(var i=0 ; i<arrEle.length;i++){
+		if(arrEle[i].className==strClass){
+			arrResult.push(arrEle[i]);
+		}
+	}
+	return arrResult;
+}
+
+
+
+
+/**
+ * 图片轮播
+ * 因为move是在不同的函数中调用的会导致this指向问题，用_this代替this
+ * @param {父元素} doms 
+ * @param {主体} body 
+ * @param {子元素} child 
+ * @param {移动速度} speed 
+ */
+function Marquee(doms,body,child,speed){
+	var _this=this;
+	this.mar_parent=doms;
+	this.mar_body=this.mar_parent.getElementsByTagName(body)[0];
+	this.mar_childs=this.mar_body.getElementsByTagName(child);
+	this.speed=speed;
+	this.mar_body.innerHTML+=this.mar_body.innerHTML;
+	this.mar_body.style.width=this.mar_childs[0].offsetWidth*this.mar_childs.length+'px';
+	this.move=function(){
+		if(_this.mar_body.offsetLeft<-_this.mar_body.offsetWidth/2){
+			_this.mar_body.style.left='0';
+		}
+		if(_this.mar_body.offsetLeft>0){
+			_this.mar_body.style.left=-_this.mar_body.offsetWidth/2+'px';
+		}
+		_this.mar_body.style.left=_this.mar_body.offsetLeft+_this.speed+'px';
+	};
+	this.timer=setInterval(this.move,30);
+}
+Marquee.prototype.cMove=function(){
+	this.timer=setInterval(this.move,30);
+};
+Marquee.prototype.pauseMove=function(){
+	clearInterval(this.timer);
+};
