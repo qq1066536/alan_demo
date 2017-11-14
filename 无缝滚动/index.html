@@ -11,7 +11,7 @@
             padding: 0;
         }
         #div1{
-                width: 800px;
+                /* width: 800px; */
                 height: 125px;
                 position: relative;
                 background: red;
@@ -47,7 +47,7 @@
             transform: translate(-100%,0)
         }
         #btn2{
-            left: 1002px;
+            /* left: 1002px; */
             width:0; 
             height:0; 
             border-top:calc(125px/2) solid transparent;
@@ -63,7 +63,10 @@
             var oDiv=document.getElementById('div1');
             var oBtn1=document.getElementById("btn1");
             var oBtn2=document.getElementById("btn2");
+
             var marq=new Marquee(oDiv,'ul','li',2);
+            oBtn2.style.left=oDiv.offsetLeft+parseInt(oDiv.style.width)+4+'px';
+            // alert(oDiv.style.width)
             oDiv.onmouseover=function(){
                 marq.pauseMove();
             }
@@ -87,6 +90,8 @@
         <li><img src="./image/Flower_by_Dominik_Scythe.jpg" alt=""></li>
         <li><img src="./image/Balloon_by_Matt_Benson.jpg" alt=""></li>
         <li><img src="./image/Beach_by_Samuel_Scrimshaw.jpg" alt=""></li>
+        <!-- <li><img src="./image/Beach_by_Samuel_Scrimshaw.jpg" alt=""></li>
+        <li><img src="./image/Balloon_by_Matt_Benson.jpg" alt=""></li> -->
     </ul>
 
     </div>

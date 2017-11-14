@@ -44,7 +44,11 @@ function Marquee(doms,body,child,speed){
 	this.mar_body=this.mar_parent.getElementsByTagName(body)[0];
 	this.mar_childs=this.mar_body.getElementsByTagName(child);
 	this.speed=speed;
+	//设置父元素宽度
+	this.mar_parent.style.width=this.mar_childs[0].offsetWidth*this.mar_childs.length+'px';
+	//主体添加子元素
 	this.mar_body.innerHTML+=this.mar_body.innerHTML;
+	//设置主体宽度
 	this.mar_body.style.width=this.mar_childs[0].offsetWidth*this.mar_childs.length+'px';
 	this.move=function(){
 		if(_this.mar_body.offsetLeft<-_this.mar_body.offsetWidth/2){
