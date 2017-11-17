@@ -1,4 +1,7 @@
-.warp{ margin:0 auto;min-width: 240px; max-width:640px;width: 100%}
+.warp{ margin:0 auto;
+  /* min-width: 240px;
+   max-width:640px; */
+   width: 100%}
 .center{ width:100%; margin:0 auto;}
 
 
