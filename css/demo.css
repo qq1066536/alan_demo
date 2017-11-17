@@ -1,0 +1,615 @@
+.warp{ margin:0 auto;min-width: 240px; max-width:640px;width: 100%}
+.center{ width:640px; margin:0 auto;}
+
+
+.section .caption{
+  font-size: 44px;
+  padding-top: 65px;
+}
+.section .caption_sub{
+  font-size: 18px;
+  font-family: "PingFangSC";
+  line-height: 1.708;
+  text-indent: 2em;
+  padding-top: 35px;
+}
+
+/*   banner配置开始*/
+.banner{
+  background: url('../images/banner_bg.png') center center no-repeat;
+  height: 342px;
+  position: relative;
+}
+.banner-title {
+  font-size: 38px;
+  font-family: "STSongti";
+  color: rgb(255, 255, 255);
+  line-height: 44px;
+  position: absolute; 
+  left: 50%;
+  transform: translate(-50%,0);
+  top: 56px;
+}
+.banner-title span {
+  color:#f8a449;
+}
+ .bannner-title-small {
+  font-size: 34px;
+  font-family: "PingFangSC";
+  color: rgb(255, 255, 255);
+  line-height: 0.66;
+  /* transform: translate(-50%,0); */
+  position: absolute;
+  left: 145px;
+  top: 118px;
+}
+.banner-body {
+  font-size: 54px;
+  font-family: "SourceHanSansCN";
+  color: rgb(255, 255, 255);
+  line-height: 0.514;
+  transform: translate(-50%,0);
+  position: absolute;
+  left: 50%;
+  top: 180px;
+
+}
+ .banner-footer {
+  font-size: 20px;
+  font-family: "PingFangSC";
+  color: rgb(255, 255, 255);
+  line-height: 1.156;
+  position: absolute;
+  left: 100px;
+  /* transform: translate(-50%,0); */
+  top: 265px;
+}
+/*   banner配置结束*/
+/*   section1配置结束*/
+.section2{
+  height: 860px;
+  /* width: 640px; */
+  margin: 0 auto;
+  background: url('../images/sec1_bg.png') no-repeat center;
+  position: relative;
+}
+.section2 .angel1{
+  position: absolute;
+  left: 70px;
+  top: 256px;
+  height: 123px;
+  width: 108px;
+  background: url('../images/dbx_5.png') no-repeat center
+}
+.section2 .angel2{
+  position: absolute;
+  left: 184px;
+  top: 228px;
+  height: 157px;
+  width: 138px;
+  background: url('../images/dbx_8.png') no-repeat center
+}
+.section2 .angel3{
+  position: absolute;
+  left: 32px;
+  top: 360px;
+  height: 102px;
+  width: 88px;
+  background: url('../images/dbx_6.png') no-repeat center
+}
+.section2 .angel4{
+  position: absolute;
+  left: 127px;
+  top: 361px;
+  height: 131px;
+  width: 114px;
+  background: url('../images/dbx_7.png') no-repeat center
+}
+.section2 .angel5{
+  position: absolute;
+  left: 331px;
+  top: 202px;
+  height: 131px;
+  width: 114px;
+  background: url('../images/dbx_1.png') no-repeat center
+}
+.section2 .angel6{
+  position: absolute;
+  left: 451px;
+  top: 218px;
+  height: 132px;
+  width: 116px;
+  background: url('../images/dbx_4.png') no-repeat center
+}
+.section2 .angel7{
+  position: absolute;
+  left: 373px;
+  top: 304px;
+  height: 156px;
+  width: 139px;
+  background: url('../images/dbx_2.png') no-repeat center
+}
+.section2 .angel8{
+  position: absolute;
+  left: 510px;
+  top: 313px;
+  height: 119px;
+  width: 105px;
+  background: url('../images/dbx_3.png') no-repeat center
+}
+
+.section2 .cert-footer{
+  bottom:40px;
+}
+.section2 .list{ 
+   margin-top: 32px; 
+   padding-bottom: 40px ;
+}
+.section2 .list .item div{
+  height: 100px;
+  text-align: center;
+  box-sizing: border-box;
+  padding:0 33px;
+}
+.section2 .list .item p{
+  margin: 20px 0;
+  font-size: 17px;
+  font-family: "PingFangSC";
+  color: rgb(51, 51, 51);
+  line-height: 1.193;
+}
+.section2 .list .item{
+  float: left;
+  width: 25%;
+}
+.section2 .list .item1 {
+  background: url('../images/sec1_1.png') no-repeat center;
+}
+.section2 .list .item2 {
+  background: url('../images/sec1_2.png') no-repeat center;
+}
+.section2 .list .item3 {
+  background: url('../images/sec1_3.png') no-repeat center;
+}
+.section2 .list .item4 {
+  background: url('../images/sec1_4.png') no-repeat center;
+}
+.section2 .list .item5 {
+  background: url('../images/sec1_5.png') no-repeat center;
+}
+.section2 .list .item6 {
+  background: url('../images/sec1_6.png') no-repeat center;
+}
+.section2 .list .item7 {
+  background: url('../images/sec1_7.png') no-repeat center;
+}
+.section2 .list .item8 {
+  background: url('../images/sec1_8.png') no-repeat center;
+}
+
+
+
+/* .section2 .cert-footer li:hover{
+  background: #f3923c;
+  color: #fff;
+} */
+.section2 .caption_sub{
+  color: rgb(51, 51, 51);
+}
+.section2 .body{
+  margin-top: 80px;
+  /* background: url('../images/组 9.png') no-repeat center center; */
+  height: 259px;
+}
+.section2 .body div{
+  padding-top: 1px;
+}
+.section2 .body p{
+  font-size: 37.451px;
+  font-family: "PingFangSC";
+  color: rgb(51, 51, 51);
+  margin-top: 100px;
+}
+.section2 .question{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  left: 50%;
+  width: 482px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  font-size: 26px;
+  color: #f47733;
+  background: url('../images/rect_1.png') no-repeat center ;
+  background-size:contain;
+}
+.section2 .caption{
+  padding-top: 40px;
+  /* height: 130px; */
+  font-size: 32px;
+  font-family: "PingFangSC";
+  color: rgb(51, 51, 51);
+  text-align: center;
+  /* line-height: 130px; */
+}
+/*   section2配置结束*/
+/*    广告配置开始*/
+.ad1{
+  background: url('../images/ad_1_02.png') no-repeat center center;
+  height: 128px;
+  position: relative;
+}
+.ad2{
+  background: url('../images/ad_2.png') no-repeat center center;
+  height: 128px;
+  position: relative;
+}
+.ad3{
+  background: url('../images/ad_3.png') no-repeat center center;
+  height: 128px;
+  position: relative;
+}
+.ad1 button,.ad2 button,.ad3 button,.section10 button,.section11 button{
+  position: absolute;
+  border-radius: 12px;
+  background-color: rgb(240, 141, 53);
+  width: 204px;
+  height: 41px;
+  border: none;
+  font-size: 18px;
+  font-family: "PingFangSC";
+  color: rgb(255, 255, 255);
+  line-height: 1.708;
+  /* margin:42px  80px ; */
+}
+
+.ad1 button,.ad2 button{
+  left: 50%;
+  transform: translate(215px,0);
+  top: 45px;
+}
+.ad3 button{
+  left: 50%;
+  top: 80px;
+  transform: translate(-50%,0)
+}
+/*广告配置结束*/
+/*   section3配置开始*/
+.section3{
+  background: url('../images/sec3_bg.png') no-repeat center center;
+  height: 571px;
+}
+/*   section3配置结束*/
+
+/*   section6配置开始*/
+.section4 {
+  background: url('../images/sec4_bg.png') no-repeat center;
+  height: 939px;
+}
+.section4 .caption{
+  font-size: 51.457px;
+  font-family: "PingFangSC";
+  color: rgb(51, 51, 51);
+  line-height: 0.539;
+  padding-top: 40px;
+}
+
+
+.section4 .list{
+  margin-top: 55px;
+  margin-left: 60px;
+
+}
+
+
+.section4 .rec1{
+  width: 244px;
+  height: 371px;
+  background: #fff;
+  float: left;
+  margin-left: -30px;
+  border: 10px solid #fff;
+  background: #ccc;
+  box-shadow: 2px 2px 10px #ccc;
+  margin-bottom: 10px ;
+}
+
+.section4 .rec2 {
+  height: 371px;
+  width: 50px;
+  float: left;
+}
+.logo_bg{
+  width: 244px;
+  height: 128px;
+  margin-top: 20px;
+  /* margin: 0 auto ; */
+  position: relative;
+}
+.logo_bg_1{
+  background:#000;
+}
+.logo_bg_2,.logo_bg_3,.logo_bg_4{
+  background: #fff;
+}
+.logo{
+  position: absolute;
+  height: 75px;
+  top: 26px;
+  width: 244px;
+  margin: 0 auto;
+  text-align: center;
+  /* float: left; */
+}
+.logo_bg_1 .logo{
+  background: url('../images/sec4_1 (1).png') no-repeat center;
+}
+.logo_bg_2 .logo{
+  background: url('../images/sec4_1 (2).png') no-repeat center;
+}
+.logo_bg_3 .logo{
+  background: url('../images/sec4_1 (4).png') no-repeat center;
+}
+.logo_bg_4 .logo{
+  background: url('../images/sec4_1 (3).png') no-repeat center;
+}
+.rec1 dl dt{
+  font-size: 26px;
+  color: rgb(51, 51, 51);
+  line-height: 1.719;
+  margin-top: 20px;
+}
+.rec1 dl dd{
+  font-size: 18.64px;
+  font-family: "PingFangSC";
+  color: #f5f5f5;
+  line-height: 1.663;
+  width: 80%;
+  /*height: 90px*/
+  margin: 0 10%;
+  height: 90px;
+  overflow: hidden;
+}
+
+.rec1 button,.section7 button {
+  padding: 5px;
+  border-width: 1px;
+  border-color: rgb(245, 125, 37);
+  border-style: solid;
+  background: #fff;
+  color: rgb(242, 151, 54);
+  font-size: 17px;
+  line-height: 1.2;
+  margin-top:20px;
+}
+.rec1 button {
+  background:#fff;
+}
+/*   section6配置结束*/
+/*   section7配置开始*/
+.section7 {
+  height: 912px;
+  /* background: #f5f5f5; */
+}
+.section7 .caption{
+  padding-top: 40px;
+  font-size: 24px;
+  color: rgb(51, 51, 51);
+}
+.section7 .caption_sub{
+  font-size: 18px;
+  text-indent: 0;
+  color: rgb(51, 51, 51);
+}
+.section7 .item {
+  width: 240px;
+  height: 300px;
+  box-shadow: 2px 2px 10px #000;;
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+  
+}
+.section7 .item .head{
+  height: 75px;
+  width: 100%;
+
+}
+.section7 .item1 .head{
+  background: url('../images/sec7_ul_head_bg.png') no-repeat 57px 30px ;
+  background-color: #fff;
+}
+.section7 .item2 .head{
+  background: url('../images/sec7_ul_head_bg_1.png') no-repeat 57px 30px ;
+  background-color: #fff;
+}
+.section7 .item3 .head{
+  background: url('../images/sec7_ul_head_bg_2.png') no-repeat 57px 30px ;
+  background-color: #fff;
+}
+.section7 .item4 .head{
+  background: url('../images/sec7_ul_head_bg_3.png') no-repeat 57px 30px ;
+  background-color: #fff;
+}
+.section7 .item .head span {
+  display: block;
+  padding-top: 30px;
+  font-size: 22px;
+  font-family: "PingFangSC";
+  color: rgb(51, 51, 51);
+  line-height: 1.397;
+  margin-left: 30px;
+
+}
+.section7 .item .body{
+  height: 150px;
+  font-size: 16px;
+  font-family: "PingFangSC";
+  color: rgb(255, 255, 255);
+  line-height: 1.546;
+  margin-left: 3px;
+}
+.section7 .item1 .body{
+  background: url('../images/sec7_ul_body_bg_1.png') no-repeat center;
+}
+.section7 .item2 .body{
+  background: url('../images/sec7_ul_body_bg_2.png') no-repeat center;
+}
+.section7 .item3 .body{
+  background: url('../images/sec7_ul_body_bg_3.png') no-repeat center;
+}
+.section7 .item4 .body{
+  background: url('../images/sec7_ul_body_bg_4.png') no-repeat center;
+}
+.section7 .item .body span{
+  display: block;
+  padding: 20px;
+}
+/*   section7配置结束*/
+/*   section8配置开始*/
+.section8 {
+  height: 918px;
+  background: url('../images/sec8_bg.png') no-repeat center;
+  color :#fff;
+  position: relative;
+}
+.section8 .caption{
+  padding-top: 40px;
+  font-size: 36px;
+}
+.section8 .caption_sub{
+  color:#fff;
+  font-size: 18px;
+}
+.section8 .item-out{
+  font-size: 22px;
+  /* line-height: 1.397; */
+  padding-left: 20px;
+  /* margin-top: 42px; */
+  list-style-position: outside;
+  list-style-image: url('../images/list-style.png');
+  left: 60px;
+  position: absolute
+  /* text-indent: 2em; */
+}
+
+.section8 .item-out li {
+  list-style: none;
+ 
+}
+.section8 .item {
+
+  display: inline-block;
+  /* margin:0 20px; */
+  margin: 0 auto;
+  /* width: 140px; */
+  /* margin-top: 27px; */
+}
+.section8 .item img{
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section8 .item p {
+  font-size: 16px;
+  margin: 22px 0;
+  /* line-height: 2.196; */
+}
+.section8 .item-company{
+  display: inline-block;
+  margin-top: 27px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+/*   section8配置结束*/
+/*   section9配置开始*/
+.section9 {
+  height: 756px;
+  background: #fff;
+}
+.section9 .caption{
+  background: url('../images/税务师.png') no-repeat center;
+  height: 54px;
+}
+.section9 .documents{ float: left; width: 600px; margin-top: 42px;}
+.section9 .documentItem{ position: relative; float: left; width: 50%; margin-bottom: 36px;}
+.section9 .documentItem h2{ font-size: 18px; line-height: 30px; color: #333333; width: 220px; border-bottom: 1px solid #d6d6d6; padding-left: 30px; position: relative; margin-bottom: 10px; padding-bottom: 5px;}
+.section9 .documentItem h2:before{ content: ""; display: block; width: 24px; height: 24px; border-radius: 50%; background-color: #059c89; background-repeat: no-repeat; background-position: center; position: absolute; left: 0; top: 3px;}
+.section9 .documentItem h2:after{ content: ""; display: block; width: 103px; height: 3px; background: #059c89; position: absolute; left: 0; bottom: -2px;}
+.section9 .documentItem.icon1 h2:before{ background-image:url(../images/icon_1.png);}
+.section9 .documentItem.icon2 h2:before{ background-image:url(../images/icon_3.png);}
+.section9 .documentItem p{ font-size: 16px; line-height: 30px; color: #333333; padding-left: 28px;}
+.section9 .documentItem p:hover{ text-decoration: underline;}
+.section9 .documentItem.icon1 p{ background: url(../images/icon_2.png) left center no-repeat;}
+.section9 .documentItem.icon2 p{ background: url(../images/icon_4.png) left center no-repeat;}
+.section9 .documentItem p a{ display: block; color: #333333; text-decoration: none;}
+.section9 .wordDocument{ float: right; width: 570px; height: 440px; background: #fff; margin-top: 32px;}
+.section9 .wordItem{ background: url(../images/icon_5.jpg) 5px center no-repeat; border-bottom: 1px solid #ebebeb; padding: 8px 0; padding-left: 35px; cursor: pointer;}
+.section9 .wordItem:hover{ background-color: #f0f9ff;}
+.section9 .wordItem .wordInf{ overflow: hidden; line-height: 20px;}
+.section9 .wordItem .wordInf .name{ font-size: 12px; color: #333333; float: left; width: 375px;}
+.section9 .wordItem .wordInf .date{ font-size: 12px; color: #999999; float: left;}
+.section9 .wordItem .wordInf .download{ font-size: 12px; float: left; text-decoration: none; background: url(../images/icon_6.jpg) left center no-repeat; color: #999999; padding-left: 12px; float: right;}
+.section9 .wordItem .size{ font-size: 12px; line-height: 20px; color: #999;}
+/*   section9配置结束*/
+/*   section10配置开始*/
+.section10 {
+  background: url('../images/sec10_bg.png') no-repeat center;
+  height: 595px;
+}
+td{
+  height: 45px;
+  width: 126px;
+  padding-top: 10px;
+}
+input{
+  height: 38px;
+  width: 300px;
+  background: rgb(232, 218, 255);
+  /* margin: 10px; */
+}
+.section10 .name{
+  background: url('../images/1_23.png') no-repeat;
+  height: 42px;
+}
+.section10 .tel{
+  background: url('../images/1_22.png') no-repeat;
+  height: 42px;
+}
+.section10 .email{
+  background: url('../images/1_10.png') no-repeat;
+  height: 42px;
+}
+.section10 button{
+  position: inherit;
+  box-shadow: 2px 2px 2px #6d4cf1;
+}
+.section10 form{
+  float: left;
+  padding-left: 60px;
+  padding-top: 275px;
+}
+/*   section10配置结束*/
+/*   section11配置开始*/
+.section11 {
+  height: 554px;
+  background: url('../images/sec11_bg.png') no-repeat center;
+  color:#fff;
+}
+.section11 .caption_sub{
+  color:#fff;
+  padding-top: 70px ;
+}
+.section11 button{
+  border-radius: 0;
+  left: 50%;
+  height: 70px;
+  width: 360px;
+  margin-top: 80px;
+  transform: translate(-50%,0);
+  background:#e0602e;
+}
+/*   section11配置结束*/
+
+
