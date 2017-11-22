@@ -18,15 +18,6 @@ $(function(){
 			return false;
 		};
 		
-		/*if($(this).parents("form").find($("#email")).val() == "") {
-			alert("閭涓嶈兘涓虹┖锛�");
-			$(this).parents("form").find($("#email")).focus();
-			return false;
-		} else if(!(Ereg.test($(this).parents("form").find($("#email")).val()))) {
-			alert("閭鏍煎紡涓嶆纭紒");
-			$(this).parents("form").find($("#email")).focus();
-			return false;
-		};*/
 
 		if($(this).parents("form").find($("#tel")).val() == "") {
 			alert("电话号码不能为空");
@@ -38,4 +29,4 @@ $(function(){
 			return false;
 		};
 	});
-})()
+})();

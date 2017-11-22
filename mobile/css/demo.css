@@ -498,6 +498,9 @@
   list-style: none;
  
 }
+.section8 .item-out1{
+  top: 680px;
+}
 .section8 .item {
 
   display: inline-block;
@@ -612,4 +615,21 @@ input{
 }
 /*   section11配置结束*/
 
+.top_tips{position:fixed;top:0;z-index:9999;width:100%;height:50px;line-height:50px;background:#000;color:#fff;box-shadow:0 0 10px rgba(10,2,4,.75);}
+.top_tips span{ float: left; width:40px; height:40px; background:url(http://wap.cma.gaodun.cn/images/iconAll.png) 0 -231px no-repeat; border-radius:5px; margin:5px}
+.top_tips ul { float: left; }
+.top_tips ul li { height: 20px; line-height: 20px; font-size: 12px !important;}
+.top_tips ul li:nth-child(1) { margin-top: 5px; }
+@media screen and (max-width:414px){
+	.top_tips{ font-size:16px; }
+}
+@media screen and (max-width:375px){
+	.top_tips{ font-size:14px; }
+}
+@media screen and (max-width:320px){
+	.top_tips{ font-size:12px; }
+}
+
+.footer{ height: 1.5rem; line-height: 1.5rem; text-align: center; background: #3c4348;}
+.footer img{ width: 80%;}
 

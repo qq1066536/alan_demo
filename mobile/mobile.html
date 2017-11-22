@@ -9,8 +9,40 @@
   <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
   <link rel="stylesheet" href="./css/demo.css">
   <link rel="stylesheet" href="./css/public.css">
-  <script type="text/javascript" src="http://img.gaodun.cn/js/jquery-1.9.0.js"></script>
-  <script src="js/demo.js"></script>
+  <style >
+  
+  body,html{margin:0;padding:0;     font-family: "微软雅黑";}
+
+a, a:link {    cursor: pointer;    color: #333;    line-height: 24px;    text-decoration: none;  }
+.footer { width: 100%; height: 116px; position: fixed; bottom: 0; left: 0; line-height: 116px; z-index: 100; display: none; }
+.footer .footerInner { width: 100%; height: 100%; -moz-box-shadow: 6px 0 24px rgba(32,21,18,.72); -webkit-box-shadow: 6px 0 24px rgba(32,21,18,.72); box-shadow: 6px 0 24px rgba(32,21,18,.72); }
+.footer a { display: block; float: left; position: relative; }
+.footer a em, .footer a i { display: block; position: absolute;font-style: normal; }
+.footerLink4 { width: 18.125%; height: 100%; background-color: #ff4d8b;border-right:1px solid #464e5b; }
+.footerLink1 { width: 18.125%; height: 100%; background-color: #2e3642; }
+.homeIcon { left: 50%; top: 18px; width: 59px; height: 50px; margin-left: -29px; background: url(images/footerLink1.png) no-repeat; }
+.sqfqIcon { left: 50%; top: 21px; width: 50px; height: 50px; margin-left: -29px; background: url(images/footerLink4.png) no-repeat; }
+.footerLink1 em,.footerLink4 em { display: block; left: 0; top: 68px; width: 100%; color: #6a7380; font-size: 20px; line-height: 36px; text-align: center; }
+.footerLink2 {width: 50%;height: 100%;background-color: #ff4d8b;}
+.swtIcon { left: 50%; top: 36px; width: 54px; height: 48px; margin-left: -100px; background: url(images/footerLink2.png) no-repeat; }
+.swtIcon_Counter { left: 50%; top: 30px; width: 28px; height: 28px; margin-left: -68px; text-align: center; line-height: 26px; background-color: #e60012; color: #fff; font-size: 18px; font-style: normal; -moz-border-radius: 28px; -webkit-border-radius: 28px; border-radius: 28px; -moz-box-shadow: 0 0 3px rgba(0,0,0,0.8); -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.8); box-shadow: 0 0 3px rgba(0,0,0,0.8); }
+.footerLink2 em { display: block; left: 50%; top: 50%; margin-left: -28px; margin-top: -23px; color: #fff; font-size: 32px; line-height: 46px; }
+.footerLink3 {width: 50%;height: 100%;background-color: #18c0ea;}
+.phoneIcon { left: 50%; top: 50%; width: 54px; height: 54px; margin-top: -27px; margin-left: -90px; background: url(images/footerLink3.png) no-repeat; }
+.footerLink3 em { display: block; left: 50%; top: 50%; margin-left: -28px; margin-top: -23px; color: #fff; font-size: 32px; line-height: 46px; }
+ @media screen and (min-width:320px) and (max-width:900px) {
+.footer { height: 50px; }
+.homeIcon { top: 9px; width: 30px; height: 25px; margin-left: -15px; -moz-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+.sqfqIcon { top: 9px; width: 29px; height: 22px; margin-left: -15px; -moz-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+.footerLink1 em,.footerLink4 em { font-size: 10px; top: 34px; line-height: 18px; }
+.swtIcon { top: 12px; width: 27px; height: 24px; margin-left: -50px; -moz-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+.swtIcon_Counter { top: 10px; width: 14px; height: 14px; margin-left: -34px; line-height: 13px; font-size: 9px; }
+.footerLink2 em { font-size: 14px; line-height: 23px; margin-left: -14px; margin-top: -12px; }
+.phoneIcon { width: 27px; height: 27px; margin-top: -14px; margin-left: -45px; -moz-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+.footerLink3 em { font-size: 14px; line-height: 23px; margin-left: -14px; margin-top: -12px; }
+ }
+</style>
+
   <script>
       window.onload=function(){
         var clientWidth = document.documentElement.clientWidth,
@@ -419,16 +451,17 @@
                 </form>
         </div>
     </div>
-    <!-- <div class="section section11">
-        <div class="center">
-                <div class="caption text-center">开启税务师极速通关的秘密</div>
-                <div class="caption_sub">高顿率先提出并应用“全程陪伴式教与学”的税务师辅导模式，辅以标杆学习
-                        定制教学理念贯穿学习始终，解决学员在学习过程中遇到的“入门难、坚持难、
-                        得分难”的三大难题，帮助学员1-2年通过考试。</div>
-                <button onclick="urlTo()">点击获取通关秘诀</button>
-        </div>
-    </div> -->
-</div>
+    <div class="footer" id="footer" style="display: block; bottom: 0px;">
+    <div class="footerInner"><a class="footerLink2" href="javascript:void(0)" onClick="openZoosUrl();LR_HideInvite();;return false;" target="_blank" rel="nofollow">
+    <i class="swtIcon"></i><i class="swtIcon_Counter" id="swtIcon_Counter">7</i>
+    <em>在线咨询</em></a><a class="footerLink3" href="tel:4006008011"><i class="phoneIcon"></i><em>为税务师打call</em></a>   
+    </div> 
+    </div>
 
+
+</div>
+<script type="text/javascript" src="http://img.gaodun.cn/js/jquery-1.9.0.js"></script>
+<script src="js/demo.js"></script>
+<script src="js/js.js"></script>
 </body>
 </html>
